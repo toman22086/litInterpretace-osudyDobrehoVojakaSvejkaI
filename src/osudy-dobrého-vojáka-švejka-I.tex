@@ -1,0 +1,38 @@
+\documentclass[12pt, a4paper]{article}
+
+% --- Základní balíčky pro češtinu ---
+\usepackage[czech]{babel}
+\usepackage[T1]{fontenc}
+
+% --- Ostatní balíčky ---
+\usepackage{geometry}
+\usepackage{parskip}
+\usepackage{hyperref}
+
+% --- BibLatex---
+\usepackage[backend=biber, style=iso-numeric]{biblatex}
+\addbibresource{zdroje.bib}
+
+% --- Vzhled ---
+\geometry{a4paper, margin=2cm} % Nastavení okrajů
+
+
+% --- Nadpis ---
+\title{\textbf{LITERÁRNÍ INTERPRETACE}}
+\author{Michal}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\input{obecený-úvod.tex}
+
+\input{ukázka.tex}
+
+\input{práce-s-ukázkou.tex}
+
+\printbibliography[title={Zdroje}]
+
+\end{document}
+
